@@ -1,0 +1,106 @@
+:root{
+    --Dark-cyan: hsl(158, 36%, 37%); 
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%); 
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+main{
+    height: 100vh;
+    background-color: var(--Cream);
+}
+.box{
+    background-color: var(--White);
+    height: 65%;
+    width: 40%;
+    border-radius: 0.675rem;
+    -webkit-border-radius: 0.675rem;
+    -moz-border-radius: 0.675rem;
+    -ms-border-radius: 0.675rem;
+    -o-border-radius: 0.675rem;
+}
+.box img{
+    border-radius:0.675rem 0 0 0.675rem ;
+    -webkit-border-radius:0.675rem 0 0 0.675rem ;
+    -moz-border-radius:0.675rem 0 0 0.675rem ;
+    -ms-border-radius:0.675rem 0 0 0.675rem ;
+    -o-border-radius:0.675rem 0 0 0.675rem ;
+}
+.box .cont{
+    padding: 2rem;
+}
+.cont span{
+    font-size: 13px;
+    color: var(--Dark-grayish-blue);
+    letter-spacing: 4px;
+    font-family: 'Montserrat', sans-serif;
+}
+.cont h2{
+    line-height: 0.9;
+    padding-top: 20px;
+    font-family: 'Fraunces', serif;
+    color: var(--Very-dark-blue);
+    font-weight: 700;
+    padding-right: 5px;
+}
+.cont p{
+    font-weight: 500;
+    padding-top: 20px;
+    font-size: 15px;
+    color: var(--Dark-grayish-blue);
+    font-family: 'Montserrat', sans-serif;
+}
+.cont .price h2{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    color: var(--Dark-cyan);
+}
+.cont .price span{
+    padding: 20px 0 0 20px;
+    letter-spacing: 0;
+}
+.cont .add{
+    cursor: pointer;
+    background-color: var(--Dark-cyan);
+    margin-top: 20px;
+    border-radius: 0.675rem;
+    -webkit-border-radius: 0.675rem;
+    -moz-border-radius: 0.675rem;
+    -ms-border-radius: 0.675rem;
+    -o-border-radius: 0.675rem;
+}
+.cont .add:hover{
+    background-color:hsl(158, 36%, 20%);
+}
+.cont .add img{
+    padding-right: 10px;
+}
+.cont .add p{
+color: var(--White);
+font-family: 'Montserrat', sans-serif;
+font-weight: 700;
+}
+.img2{
+    display: none;
+}
+@media (max-width:768px) {
+    .box{
+        flex-direction: column;
+        width: 95%;
+        height: 90%;
+    }
+    .box img{
+        border-radius: 0.675rem 0.675rem 0 0;
+        -webkit-border-radius: 0.675rem 0.675rem 0 0;
+        -moz-border-radius: 0.675rem 0.675rem 0 0;
+        -ms-border-radius: 0.675rem 0.675rem 0 0;
+        -o-border-radius: 0.675rem 0.675rem 0 0;
+    }
+    .img2{
+        display: block;
+    }
+    .img1{
+        display: none;
+    }
+}
